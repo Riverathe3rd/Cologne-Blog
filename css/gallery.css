@@ -1,0 +1,45 @@
+#nestedGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    border: 3px solid white;
+    gap: 5px;
+    align-items: center;
+}
+
+#one {
+    background-image: url(assets/ACQUA_DI_PARMA.jpg);
+    background-size: cover;
+}
+
+#two {
+    background-image: url(assets/BURBERRY.jpg);
+    background-size: cover;
+}
+
+#three {
+    background-image: url(assets/BVLGARI.jpg);
+    background-size: cover;
+}
+
+#four {
+    background-image: url(assets/DEDCOOL.jpg);
+    background-size: cover;
+}
+
+#five {
+    background-image: url(assets/DOLCE.jpg);
+    background-size: cover;
+}
+
+#six {
+    background-image: url(assets/SISLEY.jpg);
+    background-size: cover;
+}
+
+.gallery {
+    width: 300px;
+    height: 500px;
+    border: 1px solid #897667;
+    padding: 50px;
+}

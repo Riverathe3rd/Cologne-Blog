@@ -1,0 +1,152 @@
+@import url(icons.css);
+@import url(navbar.css);
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial', Arial, sans-serif;
+    margin: 0%;
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'hd'
+        'main'
+        'sd'
+        'ft';
+}
+
+.exam {
+    border: 1px solid #C0A58F;
+    background-color: #f8fa9d;
+}
+
+.header {
+    grid-area: hd;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 16px;
+}
+
+.sidebar {
+    grid-area: sd;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.content {
+    grid-area: main;
+    text-align: center;
+    align-items: center;
+}
+
+.footer {
+    grid-area: ft;
+    text-align: center;
+    color: white;
+    background-color: #000;
+    padding: 12px;
+}
+
+.socials {
+    border: 1px solid #C0A58F;
+    padding: 8px 16px;
+    display: flexbox;
+}
+
+.block {
+    border: 1px solid #C0A58F;
+    padding: 8px 16px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.shadow {
+    width: 100%;
+    box-shadow: inset 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button {
+    text-decoration: none;
+    border: none;
+    background-color: #000;
+    color: #f8f8f8;
+    padding: 15px 30px;
+    margin: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* For tablets.*/
+@media(min-width:768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            'hd'
+            'main'
+            'sd'
+            'ft';
+    }
+
+    .content {
+        grid-area: main;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        grid-area: sd;
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+/* For larger than tablets?*/
+@media(min-width:1100px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            'hd hd hd hd'
+            'main main sd sd sd'
+            'ft ft ft ft';
+    }
+
+    .sidebar {
+        grid-area: sd;
+        background-color: rgb(255, 255, 255);
+        text-align: left;
+        padding: 40px;
+    }
+
+    .style {
+        border: 1px solid #C0A58F;
+        padding: 8px 16px;
+    }
+
+    .style:hover:not(:active) {
+        background-color: #C0A58F;
+        color: white;
+    }
+
+    li a:hover {
+        background-color: #C0A58F;
+    }
+
+}
