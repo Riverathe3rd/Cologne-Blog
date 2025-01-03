@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/blog.css">
+    <!-- icon library from font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Blog Post</title>
+</head>
+<body>
+<div class="container">
+        <header>
+            <nav>
+                <button id="toggleNav">Menu</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+    <article>
+        <div class="header">
+            <h1>Colonia Futura and how to smell great at the future kickback</h1>
+            <p>Written by Hector Rivera</p>
+        </div>
+        <div class="content exam">
+            <figure>
+            <img class="shadow"src="assets/BURBERRY.jpg" alt="acqua di parma cologne">
+            <figcaption>Colonia Futura by Acqua di Parma.</figcaption>
+            </figure>
+            <div>
+            <h1>Colonia Futura</h1>
+            <h2>ACQUA DI PARMA</h2>
+             <blockquote><p><b>Futura</b> is <u><em>Acqua di Parma's</em></u> declaration of love for nature.
+            A lively and untamed creation that blends the citrus freshness of Colonia with aromatic clary sage.
+            A harmony that concludes with vetiver to bring forward its woody touch through earthy and textured accents.</p></blockquote>
+             <a href="index.html"><button class="button">Back</button></a>
+            </div>
+        </div>
+    </article>
+
+    <div class="sidebar exam">     
+        <section>
+            <div class="block">
+                <h2>About The Author</h2>
+                <img src="assets/me.jpg" alt="Hector Rivera" style="width: 25%;">
+              <h3>Hector Rivera</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores quisquam magnam voluptatem laborum nemo quas quae ratione itaque eligendi nesciunt corporis nam explicabo veniam voluptates, fugit ullam, enim minima neque.</p>
+            </div>
+        </section>
+
+        <section>
+        <h2>Other Scents</h2>
+        <h3 class="style">BURBERRY</h3>
+        <h3 class="style">BVLGARI</h3>
+        <h3 class="style">DEDCOOL</h3>
+        <h3 class="style">DOLCE</h3>
+        <h3 class="style">SISLEY</h3>
+         </section>
+
+        <section>
+            <h4>Share</h4>
+            <div class="socials">
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer exam">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <p> Created from <b>scratch</b> by Hector Rivera 🇻🇮</p> 
+        </div> 
+    </footer>
+    
+    <script>
+        // JavaScript for toggling navigation menu on mobile. Working on JS on the side and found this cool feature on w3!
+        const toggleNavButton = document.getElementById('toggleNav');
+        const navMenu = document.querySelector('nav ul');
+      
+        toggleNavButton.addEventListener('click', () => {
+          navMenu.classList.toggle('show');
+        });
+      </script>
+</div>
+</body>
+</html>
