@@ -9,7 +9,7 @@
 body {
     font-family: Inter, Arial, sans-serif;
     color: #000000;
-    background-color: #000;
+    background-color: #ffffff;
 }
 
 header {
@@ -39,38 +39,42 @@ header {
 
 .hero-section {
     background-color: #D9B76E;
-    /* Matches the background color in your design */
+    /* Matches the color of the current cologne selected. A nice touch if I say so myself 😎 */
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    /* text-align: center;*/
     padding: 0 20px;
 }
 
 .product-image {
-    max-width: 300px;
+    max-width: 100%;
     height: auto;
-    margin-bottom: -200px;
+    margin-bottom: -330px;
 }
 
 .brand-title {
-    font-family: 'Futura', Arial, Helvetica, sans-serif;
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
     font-size: 200px;
-    font-weight: bold;
-    letter-spacing: 80px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 50px;
     margin-bottom: 10px;
     color: #ffffff;
 }
 
 .product-name {
     font-size: 24px;
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
     margin-bottom: 4px;
 }
 
 .product-brand {
-    font-size: 18px;
+    font-size: 24px;
 }
 
 @media (max-width: 768px) {
