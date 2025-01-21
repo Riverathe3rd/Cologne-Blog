@@ -45,7 +45,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* text-align: center;*/
+    text-align: center;
     padding: 0 20px;
 }
 
@@ -53,6 +53,7 @@ header {
     max-width: 100%;
     height: auto;
     margin-bottom: -330px;
+    animation: bounce 5s infinite;
 }
 
 .brand-title {
@@ -75,6 +76,35 @@ header {
 
 .product-brand {
     font-size: 24px;
+}
+
+@keyframes bounce {
+
+    from,
+    20%,
+    53%,
+    80% to {
+        transform: translateY(0);
+    }
+
+    40%,
+    43% {
+        transform: translateY(-30px);
+    }
+
+    70% {
+        transform: translateY(-15px);
+    }
+
+    90% {
+        transform: translateY(-4px);
+    }
+}
+
+section {
+    text-align: center;
+    margin: 20px 10px 10px 40px;
+    padding: 20px;
 }
 
 @media (max-width: 768px) {
